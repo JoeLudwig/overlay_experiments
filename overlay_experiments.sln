@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "overlay_experiments", "overlay_experiments\overlay_experiments.vcxproj", "{AE266967-9BE8-412A-B93B-624899A6B85D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simple_html_overlay", "simple_html_overlay\simple_html_overlay.vcxproj", "{E6F340ED-2AFF-40A1-B926-B470385852D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AE266967-9BE8-412A-B93B-624899A6B85D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{AE266967-9BE8-412A-B93B-624899A6B85D}.Debug|Win32.Build.0 = Debug|Win32
-		{AE266967-9BE8-412A-B93B-624899A6B85D}.Release|Win32.ActiveCfg = Release|Win32
-		{AE266967-9BE8-412A-B93B-624899A6B85D}.Release|Win32.Build.0 = Release|Win32
+		{E6F340ED-2AFF-40A1-B926-B470385852D4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E6F340ED-2AFF-40A1-B926-B470385852D4}.Debug|Win32.Build.0 = Debug|Win32
+		{E6F340ED-2AFF-40A1-B926-B470385852D4}.Release|Win32.ActiveCfg = Release|Win32
+		{E6F340ED-2AFF-40A1-B926-B470385852D4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
