@@ -6,6 +6,7 @@ debug.log
 *.sdf
 *.opensdf
 *.obj
+*.user
 */Debug/*
 */Release/*
 
