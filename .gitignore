@@ -1,5 +1,11 @@
+debug.log
+*.exe
+*.pdb
+*.ilk
 *.suo
 *.sdf
 *.opensdf
 *.obj
+*/Debug/*
+*/Release/*
 
