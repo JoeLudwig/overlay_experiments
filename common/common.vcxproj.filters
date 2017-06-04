@@ -2,8 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="weboverlay.h" />
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\dirtools_public.h" />
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\envvartools_public.h" />
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\pathtools_public.h" />
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\sharedlibtools_public.h" />
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\strtools_public.h" />
+    <ClInclude Include="openvr_public.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="weboverlay.cpp" />
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\dirtools_public.cpp" />
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\envvartools_public.cpp" />
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\pathtools_public.cpp" />
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\sharedlibtools_public.cpp" />
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\strtools_public.cpp" />
   </ItemGroup>
 </Project>

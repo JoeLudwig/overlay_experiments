@@ -17,7 +17,7 @@ namespace vr
 class CWebOverlay
 {
 public:
-	CWebOverlay( Awesomium::WebCore *pWebCore, const std::string & sOverlayKey, const std::string & sOverlayName, uint32_t unWidth, uint32_t unHeight, float fWidthInMeters, const std::string & sUrl );
+	CWebOverlay( Awesomium::WebCore *pWebCore, const std::string & sOverlayKey, const std::string & sOverlayName, uint32_t unWidth, uint32_t unHeight, float fWidthInMeters, const std::string & sUrl, const std::string & sIconFilePath = "" );
 	~CWebOverlay();
 
 	void RunFrame();

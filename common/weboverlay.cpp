@@ -9,7 +9,7 @@
 #include <SDL_opengl.h>
 
 #include "openvr.h"
-
+#include "openvr_public.h"
 
 // --------------------------------------------------------------------------------------------------
 // Purpose: Converts an OpenVR mouse button enum value to an Awesomium mouse button enum value
@@ -29,7 +29,7 @@ static Awesomium::MouseButton VRMouseButtonToAwesomiumMouseButton( vr::EVRMouseB
 // --------------------------------------------------------------------------------------------------
 // Purpose: Constructor. Makes an overlay, a web view, and a GL texture to bridge them
 // --------------------------------------------------------------------------------------------------
-CWebOverlay::CWebOverlay( Awesomium::WebCore *pWebCore, const std::string & sOverlayKey, const std::string & sOverlayName, uint32_t unWidth, uint32_t unHeight, float fWidthInMeters, const std::string & sUrl )
+CWebOverlay::CWebOverlay( Awesomium::WebCore *pWebCore, const std::string & sOverlayKey, const std::string & sOverlayName, uint32_t unWidth, uint32_t unHeight, float fWidthInMeters, const std::string & sUrl, const std::string & sIconFilePath )
 {
 	m_unWidth = unWidth;
 	m_unHeight = unHeight;
@@ -58,6 +58,14 @@ CWebOverlay::CWebOverlay( Awesomium::WebCore *pWebCore, const std::string & sOve
 	vr::VROverlay()->SetOverlayInputMethod( m_ulMainHandle, vr::VROverlayInputMethod_Mouse );
 	vr::HmdVector2_t mouseScale = { (float)unWidth, (float)unHeight };
 	vr::VROverlay()->SetOverlayMouseScale( m_ulMainHandle, &mouseScale );
+
+	std::string sIconFileToSet = sIconFilePath;
+	if ( sIconFileToSet.empty() )
+	{
+		sIconFileToSet = Path_FixSlashes( Path_MakeAbsolute( "../content/terrible_spider_icon.png", Path_StripFilename( Path_GetExecutablePath() ) ) );
+	}
+	vr::VROverlay()->SetOverlayFromFile( m_ulThumbnailHandle, sIconFileToSet.c_str() );
+
 }
 
 

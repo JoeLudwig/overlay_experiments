@@ -51,6 +51,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -63,6 +64,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -71,9 +73,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\dirtools_public.h" />
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\envvartools_public.h" />
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\pathtools_public.h" />
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\sharedlibtools_public.h" />
+    <ClInclude Include="..\thirdparty\openvr-1.0.7\src\vrcommon\strtools_public.h" />
+    <ClInclude Include="openvr_public.h" />
     <ClInclude Include="weboverlay.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\dirtools_public.cpp" />
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\envvartools_public.cpp" />
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\pathtools_public.cpp" />
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\sharedlibtools_public.cpp" />
+    <ClCompile Include="..\thirdparty\openvr-1.0.7\src\vrcommon\strtools_public.cpp" />
     <ClCompile Include="weboverlay.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
